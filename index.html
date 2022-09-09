@@ -1,44 +1,177 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Loldle Ability Quiz</title>
-        <link rel="icon" href="imgs/favicon.ico">
-        <meta name="description" content="A Quiz about League of Legends abilitys">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <h1>Loldle Ability Quiz</h1>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Loldle Ability Quiz</title>
+    <link rel="icon" href="favicon.ico" />
+    <meta name="description" content="A Quiz about League of Legends abilitys" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        body {
+            color: aliceblue;
+            background-color: transparent !important;
+
+        }
+
+        html {
+            background: url(imgs/WallpaperDark.20d3d6f6.webp) no-repeat 50% fixed;
+            background-size: cover;
+            background-color: #000;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container img {
+            width: 100%;
+        }
+
+        .container h1 {
+            font-size: 50px;
+            margin-top: 20px;
+        }
+
+        .container p {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .container button {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .container button:hover {
+            background-color: #f1f1f1;
+            color: black;
+        }
+
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 80%;
+            max-width: 334px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+        }
+
+        .game {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 4px 3px rgba(0, 0, 0, .3);
+            width: 80%;
+            max-width: 750px
+        }
+
+        .which-with-background {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+            border: 2px solid #af9767;
+            border-radius: 8px;
+            background: #1e2328;
+            font-size: 1rem;
+            padding: .8rem .2rem;
+            vertical-align: center;
+            align-content: center;
+            justify-self: center;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .which-with-background .which-text {
+            font-size: 1.2rem
+        }
+
+        .sub-container {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 8px;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+        }
+
+        .button-help,
+        .sub-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center
+        }
+
+        .button-help {
+            vertical-align: center;
+            align-content: center;
+            justify-self: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 2.5rem;
+            transition: width .2s ease-in-out;
+            margin-top: .5rem;
+            margin-bottom: 1rem
+        }
+
+        .button-help:hover {
+            cursor: pointer;
+            width: 2.7rem
+        }
+
+        .ability-img {
+            width: 90px;
+            border-radius: 5px;
+            border: .12rem solid #727272
+        }
+
+        .ability-container {
+            margin-top: 1rem
+        }
+
+        .ability-container .ability-img {
+            width: 70px !important
+        }
+
+        .ability-img:hover {
+            border: .12rem solid #fff
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header-container">
+            <a href="/index.html">
+                <img src="imgs/Logo3Small.f04e5476.webp" class="logo-game" alt="Loldle Logo" />
+            </a>
+        </div>
+
+        <div class="sub-container">
+            <div class="game">
+                <div class="which-with-background">
+                    <div>
+                        <span class="which-text">Which champion has this ability?</span>
+                    </div>
+
+                    <div>
+                        <img src="1653518957168c04cd5c45ebe434c.png" alt="Ability" class="ability-img" />
+                    </div>
+                </div>
             </div>
-            <div class="content">
-                <div class="quiz">
-                    <form action="indexnew.php" method="post">
-                        <div class="question">
-                            <h2>Question 1</h2>
-                            <p>What is the name of the champion that is the most played in the game?</p>
-                            <input type="radio" name="question1" value="Aatrox">Aatrox<br>
-                            <input type="radio" name="question1" value="Ahri">Ahri<br>
-                            <input type="radio" name="question1" value="Akali">Akali<br>
-                            <input type="radio" name="question1" value="Alistar">Alistar<br>
-                        </div>
-                        <div class="question">
-                            <h2>Question 2</h2>
-                            <p>What is the name of the champion that is the most played in the game?</p>
-                            <input type="radio" name="question2" value="Aatrox">Aatrox<br>
-                            <input type="radio" name="question2" value="Ahri">Ahri<br>
-                            <input type="radio" name="question2" value="Akali">Akali<br>
-                            <input type="radio" name="question2" value="Alistar">Alistar<br>
-                        </div>
-                        <div class="question">
-                            <h2>Question 3</h2>
-                            <p>What is the name of the champion that is the most played in the game?</p>
-                            <input type="radio" name="question3" value="Aatrox">Aatrox<br>
-                            <input type="radio" name="question3" value="Ahri">Ahri<br>
-                            <input type="radio" name="question3" value="Akali">Akali<br>
-                            <input type="radio" name="question3
-    </body>
+        </div>
+
+    </div>
+
+</body>
+
 </html>
