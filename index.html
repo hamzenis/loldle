@@ -9,7 +9,6 @@
     <meta name="description" content="A Quiz about League of Legends abilitys" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-
         @font-face {
             font-family: Friz Quadrata Std;
             src: url("fonts/Friz Quadrata Std Medium.d6bac6c9.otf");
@@ -26,7 +25,8 @@
             background-color: #000;
         }
 
-        html, body {
+        html,
+        body {
             font-family: Friz Quadrata Std, Arial;
             color: #fff !important;
         }
@@ -153,6 +153,24 @@
         .ability-img:hover {
             border: .12rem solid #fff
         }
+
+        .answers {
+            width: 80%
+        }
+
+        .answers-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse
+        }
+
+        .guessbox {
+            display: flex;
+            flex-direction: row;
+            flex: 100%;
+            justify-content: center;
+            width: 100%
+        }
     </style>
 
 </head>
@@ -167,6 +185,7 @@
         </div>
 
         <div class="sub-container">
+
             <div class="game">
                 <div class="which-with-background">
                     <div>
@@ -177,8 +196,18 @@
                         <img src="1653518957168c04cd5c45ebe434c.png" alt="Ability" class="ability-img" />
                     </div>
                 </div>
+
+                <div class="answers">
+                    <div class ="guessbox">
+                        
+                    </div>
+
+                </div>
+
             </div>
+
         </div>
+    </div>
 
     </div>
 
