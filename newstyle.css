@@ -543,10 +543,6 @@ html {
     color: #57aecf
 }
 
-.ad-debug {
-    background: url(https://cdn.dribbble.com/users/116838/screenshots/10624455/media/e3911231dffe33f0ae9524336d95629e.gif) 50%
-}
-
 .ad-block {
     display: block;
     width: 100% !important;
@@ -559,7 +555,6 @@ html {
 }
 
 html {
-    background: url(../img/WallpaperDark.20d3d6f6.webp) no-repeat 50% fixed;
     background-size: cover;
     background-color: #000
 }
